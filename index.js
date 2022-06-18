@@ -1,4 +1,4 @@
-const iniciar = (evt) => {
+let estadoSelecionado = (evt) => {
     evt.preventDefault();
 
     const estado = document.getElementById("estado");
@@ -13,14 +13,16 @@ const iniciar = (evt) => {
     }
 };
 
-const selecionaCidade = (evt) => {
+let cidadeSelecionada = (evt) => {
     evt.preventDefault();
 
-    const estado = document.getElementById("estado").options[estado.selectedIndex].value;
-    const cidade = document.getElementById("cidade").options[cidade.selectedIndex].value;
+    const estado =
+        document.getElementById("estado").options[estado.selectedIndex].value;
+    const cidade =
+        document.getElementById("cidade").options[cidade.selectedIndex].value;
 
     document.getElementById("local").innerText = cidade + "/" + estado;
-}
+};
 
-document.addEventListener("DOMContentLoaded", iniciar());
-document.getElementById("cidade").addEventListener('change', selecionaCidade);
+document.getElementById("estado").addEventListener("change", estadoSelecionado);
+document.getElementById("cidade").addEventListener("change", cidadeSelecionada);

@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="style.css">
+        <title>Estado Cidade</title>
+    </head>
 
-    <title>Estado Cidade</title>
-</head>
-
-<body>
-    <main>
-        <h1>Estado Cidade</h1>
-        <hr>
-        <form>
-            <div class="items">
+    <body>
+        <main>
+            <h1>Estado Cidade</h1>
+            <hr />
+            <form>
                 <select name="estado" id="estado">
-                    <option>--selecione--</option>
+                    <option value="invalido">--selecione--</option>
                     <option value="PR">Paraná ("PR")</option>
                     <option value="SC">Santa Catarina ("SC")</option>
                     <option value="RS">Rio Grande do Sul ("RS")</option>
@@ -35,14 +33,10 @@
                     <option value="8">Gramado</option>
                     <option value="9">Caxias do Sul</option>
                 </select>
-            </div>
-        </form>
-        <hr>
-        <div id="resultados" class="esconde">
-            <div id="local"></div>
-        </div>
-    </main>
-    <script src="index.js"></script>
-</body>
-
+            </form>
+            <hr />
+            <div id="resultados" class="esconde"></div>
+        </main>
+        <script src="index.js"></script>
+    </body>
 </html>
